@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
-
+import "./Navbar.css";
 class Navbar extends Component {
   constructor() {
     super();
@@ -51,7 +51,7 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark custom-bg mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
             Hostel-Management
