@@ -2,8 +2,8 @@ const request = require("supertest");
 const {app} = require('../server');
 
 const payload = {
-    email: 'mp.pathela@gmail.com',
-    password: 'password',
+    email: '123@gmail.com',
+    password: '12345678',
 };
 
 jest.setTimeout(10000);

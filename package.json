@@ -13,6 +13,10 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
+  "jest": {
+  "testEnvironment": "node",
+  "setupFiles": ["./jest.setup.js"]
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/starkblaze01/Hostel-Management.git"
